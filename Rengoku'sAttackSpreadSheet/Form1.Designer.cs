@@ -177,8 +177,7 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Fake Raw Damage";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.FakeRawTip.SetToolTip(this.label1, "Value seen in Equipment Info.\r\nReal value is obtained after dividing by the Weapo" +
-        "n class modifier");
+            this.FakeRawTip.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
             // 
             // FakeRaw
             // 
@@ -265,7 +264,7 @@
             this.NaturalAffinityLabel.TabIndex = 19;
             this.NaturalAffinityLabel.Text = "Natural Affinity";
             this.NaturalAffinityLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NaturalAffinityTip.SetToolTip(this.NaturalAffinityLabel, "Affinity seen in Equipment Info.");
+            this.NaturalAffinityTip.SetToolTip(this.NaturalAffinityLabel, resources.GetString("NaturalAffinityLabel.ToolTip"));
             // 
             // NaturalAffinity
             // 

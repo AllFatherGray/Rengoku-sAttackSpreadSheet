@@ -132,6 +132,14 @@
   <metadata name="FakeRawTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
   </metadata>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value>Value seen in Equipment Info.If using the Value from the Status screen.
+Trua Raw  is obtained after dividing by the Weapon Class modifier.
+
+If using the Value from the Status screen:
+ -Remove all Skill Modifiers as they would be counted already.
+ - In the case of Weakness Exploit or Attack Boost, just add the amount to Natural Affinity.</value>
+  </data>
   <metadata name="FinalRawTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>542, 41</value>
   </metadata>
@@ -141,6 +149,12 @@
   <metadata name="NaturalAffinityTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>494, 17</value>
   </metadata>
+  <data name="NaturalAffinityLabel.ToolTip" xml:space="preserve">
+    <value>Affinity seen in Equipment Info.
+If using the Value from the Status screen:
+ -Remove all Skill Modifiers as they would be counted already.
+ - In the case of Weakness Exploit or Attack Boost, just add the amount to Natural Affinity.</value>
+  </data>
   <metadata name="AttackBoostTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>898, 17</value>
   </metadata>

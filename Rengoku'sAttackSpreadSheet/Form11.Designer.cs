@@ -141,6 +141,20 @@ namespace Rengoku_sAttackSpreadSheet {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Value seen in Equipment Info.If using the Value from the Status screen.
+        ///Trua Raw  is obtained after dividing by the Weapon Class modifier.
+        ///
+        ///If using the Value from the Status screen:
+        /// -Remove all Skill Modifiers as they would be counted already.
+        /// - In the case of Weakness Exploit or Attack Boost, just add the amount to Natural Affinity..
+        /// </summary>
+        public static string label1_ToolTip {
+            get {
+                return ResourceManager.GetString("label1.ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Uses True Raw:
         ///Level 1: +3 Attack Power
         ///Level 2: +6 Attack Power
@@ -185,6 +199,18 @@ namespace Rengoku_sAttackSpreadSheet {
             get {
                 object obj = ResourceManager.GetObject("MotionValueBox.Locked", resourceCulture);
                 return ((bool)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Affinity seen in Equipment Info.
+        ///If using the Value from the Status screen:
+        /// -Remove all Skill Modifiers as they would be counted already.
+        /// - In the case of Weakness Exploit or Attack Boost, just add the amount to Natural Affinity..
+        /// </summary>
+        public static string NaturalAffinityLabel_ToolTip {
+            get {
+                return ResourceManager.GetString("NaturalAffinityLabel.ToolTip", resourceCulture);
             }
         }
         

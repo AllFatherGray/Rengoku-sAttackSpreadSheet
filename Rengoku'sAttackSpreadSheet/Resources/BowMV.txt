@@ -1,30 +1,30 @@
 The following motion values are the numbers at Critical Distance (the distance at which great damage can be dealt). Critical Distance will be described later.
 
-Shoot (R2): 8
+Shoot (R2): <8>
 
-Charge I (Hold and release R2): 10 + 10
+Charge I (Hold and release R2): <10> + <10>
 
-Charge II (Hold R2 longer than Charge I): 11 + 11 + 11
+Charge II (Hold R2 longer than Charge I): <11> + <11> + <11>
 
-Quick Shot (O): 6 + 6 + 6
+Quick Shot (O): <6> + <6> + <6>
 
-Charge Step Power Shot (L2 + X after O): 13 + 13 + 13 + 13 + 13
+Charge Step Power Shot (L2 + X after O): <13> + <13> + <13> + <13> + <13>
 
-Diving Melee Attack (Triangle after Charge Step L2 + X): 35
+Diving Melee Attack (Triangle after Charge Step L2 + X): <35>
 
-Jump Melee Attack (Triangle while jumping): 5
+Jump Melee Attack (Triangle while jumping): <5>
 
-High-Angle Shot (O after pressing R2): 1 * number of hits (max 6 hits)
+High-Angle Shot (O after pressing R2): <1> * number of hits (max 6 hits)
 
-Charge I High-Angle Shot (O at level I charge): 1 * number of hits (max 8 hits)
+Charge I High-Angle Shot (O at level I charge): <1> * number of hits (max 8 hits)
 
-Charge II High-Angle Shot (O at level II charge): 3 * number of hits (max 14 hits)
+Charge II High-Angle Shot (O at level II charge): <3> * number of hits (max 14 hits)
 
-Wyvern's Arrow (Triangle + O): 23 * number of hits
+Wyvern's Arrow (Triangle + O): <23> * number of hits
 
-Charge I Wyvern's Arrow (Triangle + O at level I charge): 24 * number of hits
+Charge I Wyvern's Arrow (Triangle + O at level I charge): <24> * number of hits
 
-Charge II Wyvern's Arrow (Triangle + O at level II charge): 26 * number of hits
+Charge II Wyvern's Arrow (Triangle + O at level II charge): <26> * number of hits
 
 About Shooting Distance
 
