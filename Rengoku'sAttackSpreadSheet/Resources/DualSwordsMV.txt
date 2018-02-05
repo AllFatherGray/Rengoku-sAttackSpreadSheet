@@ -1,0 +1,29 @@
+Double Slash (Triangle): <9> + <10>
+
+Double Slash Return (Triangle > Triangle): <10> + <10>
+
+Rotation Slash (Triangle > Triangle > Triangle): <10> + <11> + <11>
+
+Draw Slash (O): <4> + <4> + <5> + <5>
+
+Rising Slash (Triangle after Draw Slash): <9> (When Demonized, <9> )
+
+Demonized Reverse Slash (Triangle when Demonized): <13>
+
+Demonized Double Slash (Triangle > Triangle when Demonized): <15> + <9>
+
+Demonized 6-Step Slash (Triangle > Triangle > Triangle when Demonized): <10> + <10> + <10> + <10> + <16> + <16>
+
+Demon Dance (Triangle + O when Demonized): <18> + <18> + <6> + <6> + <10> + <10> + <10> + <10> + <10> + <10> + <11> + <11> + <13> + <13> + <8> + <21>
+
+Demon Rush Slash (O during Arch Demon): <5> + <5> + <4> + <4> + <9> + <9>
+
+Demon Continuous Slash (Triangle + O during Arch Demon): <10> + <10> + <8> + <8> + <4> + <18> + <18>
+
+Left Rotation Slash (O after Rush Slash): <16> + <8> + <5>
+
+Right Rotation Slash (O after Rush Slash): <16> + <8> + <5>
+
+Aerial Rotation Demon Dance ("X while facing a cliff while Demonized", think this is the "roll on a monster" move): <11> * number of hits
+
+Rotating Demon Dance Finish (Triangle while in the air during Aerial Rotation Demon Dance): <21> + <21> + <11>

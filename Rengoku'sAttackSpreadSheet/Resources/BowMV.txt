@@ -1,0 +1,41 @@
+The following motion values are the numbers at Critical Distance (the distance at which great damage can be dealt). Critical Distance will be described later.
+
+Shoot (R2): 8
+
+Charge I (Hold and release R2): 10 + 10
+
+Charge II (Hold R2 longer than Charge I): 11 + 11 + 11
+
+Quick Shot (O): 6 + 6 + 6
+
+Charge Step Power Shot (L2 + X after O): 13 + 13 + 13 + 13 + 13
+
+Diving Melee Attack (Triangle after Charge Step L2 + X): 35
+
+Jump Melee Attack (Triangle while jumping): 5
+
+High-Angle Shot (O after pressing R2): 1 * number of hits (max 6 hits)
+
+Charge I High-Angle Shot (O at level I charge): 1 * number of hits (max 8 hits)
+
+Charge II High-Angle Shot (O at level II charge): 3 * number of hits (max 14 hits)
+
+Wyvern's Arrow (Triangle + O): 23 * number of hits
+
+Charge I Wyvern's Arrow (Triangle + O at level I charge): 24 * number of hits
+
+Charge II Wyvern's Arrow (Triangle + O at level II charge): 26 * number of hits
+
+About Shooting Distance
+
+Depending on the distance from the monster and where the arrow was released, the damage may increase or decrease.
+
+-Short Range (yellow circle): Damage from charged attacks will decrease slightly
+
+-Critical Distance (orange circle): Damage is at its maximum
+
+-Long Range (yellow circle): Damage will be 1
+
+-Outside Range (OUTSIDE OF RANGE): Arrow doesn't connect (one hit of Wyvern's Arrow may connect)
+
+-Quick Shot has a short shooting distance. Damage will be 1 if you are further than 1 roll away.

@@ -1,0 +1,51 @@
+Axe: Side Slash (Triangle): <25> 
+
+Axe: Rising Slash (Triangle > Triangle): <27> 
+
+Axe: Overhead Slash (Triangle > Triangle > Triangle): <43> 
+
+Axe: Step Slash (L^ + Triangle): <10> 
+
+Axe: Downward Slash (Lv + Triangle): <24>
+
+Axe: Hack 'n Slash (O): <25> + <23> 
+
+Axe: Finishing Sweep (R2 during Hack 'n Slash): <23> + <71> + <36> 
+
+Axe: Morph Slash (R2): <36> 
+
+Axe: Jump Slash (Triangle while jumping): <40> 
+
+Axe: Jump Morph Slash (R2 while jumping): <43> 
+
+Axe: Jump Cleave (Triangle while sliding): <76>
+
+Sword: Overhead Slash (Triangle): <36> 
+
+Sword: Element Discharge (Triangle + O): <13> + <13> + <8> * 7? hits 
+
+Sword: Element Discharge Finisher (Triangle after Element Discharge): <95> 
+
+Sword: Element Discharge Burst (Lv + Triangle during Element Discharge): <66> 
+
+Sword: Double Slash (O): <26> + <31> 
+
+Sword: Leaping Continuous Attack (O > O): <29> + <39>
+
+Sword: Rising Slash (Triangle > Triangle): <26> 
+
+Sword: Side Slash (Triangle after Rising Slash): <23> 
+
+Sword: Morph Overhead Slash (Lv + R2): <48> 
+
+Sword: Jump Rising Slash (R2 while sliding): <41>
+
+Sword: Jump Element Discharge (Triangle + O while jumping): <6> * number of hits
+
+Explosions during Phial Awakening: 10 Damage
+
+Mounting Element Discharge (Triangle + O during Awakening Gauge MAX): Unverified
+
+About Phial Awakening
+
+As you attack with Sword Mode, the Awakening Gauge will accumulate. When the Awakening Gauge becomes MAX, the sword will appear to be tinged with heat, and an additional explosion effect will occur for Sword Mode attacks. Furthermore, Sword Mode's damage will increase by approximately 1.08x, and the Element Discharge will change to "Mounting Element Discharge".

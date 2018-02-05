@@ -1,0 +1,41 @@
+Mid Thrust I (Triangle): <24>
+
+Mid Thrust II (Triangle > Triangle): <24>
+
+Mid Thrust III (Triangle > Triangle > Triangle): <24>
+
+High Thrust I (R2 + Triangle): <18>
+
+High Thrust II (R2 + Triangle > Triangle): <18>
+
+High Thrust III (R2 + Triangle > Triangle > Triangle): <18>
+
+Rising Slash (Triangle + O): <30>
+
+Dash Thrust (L^ + Triangle): <30>
+
+Slam Attack (Triangle after Rising Slash or Dash Thrust): <48>
+
+Cleave (Triangle after Slam Attack): <68>
+
+Wyvern Stake Cannon (Triangle or O after Cleave, O > O > O): <28> + <4> + <8> * (10?) hits + <54>
+
+Jump Thrust (Triangle while jumping): <24>
+
+Jumping Overhead Smash (R2 while jumping): <43>
+
+Jump Reload Slam (O while jumping): <43>
+
+Jump Rising Slash (Triangle while sliding): <61>
+
+Shelling information (Normal level 3)
+
+Shelling (O): <18>
+
+Charged Shelling (hold O): <28>
+
+Full Burst (O after Slam Attack): <20> * 5
+
+Wyvern's Fire (R2 + Triangle + O): <56> * 3
+
+Aerial Full Burst (O while in the air with weapon unsheathed): <31> + ( <19> * number of hits )

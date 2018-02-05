@@ -1,0 +1,39 @@
+Forward Slam (Triangle): <27>
+
+Left Slam (Triangle): <22>
+
+Right Slam (O): <26>
+
+Double Right Turn (O > O): <15> + <13>
+
+Backward Slam (Triangle + O): <35>
+
+Superpound (L^ + Triangle + O): <15> + <40>
+
+Jumping Slam (Triangle in the air): <19>
+
+Aerial Recital (R2 in the air): <15>
+
+Recital Attack I (R2): <31> + <28>
+
+Recital Attack II (L^ + R2): <30> + <28>
+
+Recital Attack III (L<- + R2): <30> + <28>
+
+Recital Attack IV (L-> + R2): <30> + <28>
+
+Recital Attack V (Lv + R2): <31> + <28>
+
+Continuous Recital Attack I (R2 after Recital): <35> + <28> + <35> + <28> (*3)
+
+Continuous Recital Attack II (L^ + R2 after Recital): <35> + <28> + <29> + <31> + <28> (*3)
+
+Continuous Recital Attack III (L<- + R2 after Recital): <35> + <28> + <35> + <28> (*3)
+
+Continuous Recital Attack IV (L-> + R2 after Recital): <35> + <28> + <35> + <28> (*3)
+
+Continuous Recital Attack V (Lv + R2 after Recital): <35> + <28> + <35> + <28> + <31> + <28> (*3)
+
+Jump Strong Slam (Triangle while sliding): <56>
+
+*3 <28> + <22> for White Notes instead of Just <28>

@@ -1,0 +1,51 @@
+Draw Slash (L + Triangle): <25>
+
+Vertical Slash (Triangle): <23>
+
+Thrust (O): <13>
+
+Rising Slash (Triangle after Thrust): <20>
+
+Fade Slash (Triangle + O): <23>
+
+Spirit Blade I (R2 with no Spirit Gauge): <15>
+
+Spirit Blade I (R2 with Spirit Gauge): <27>
+
+Spirit Blade II (R2 R2 with Spirit Gauge): <33>
+
+Spirit Blade III (R2 after Spirit Blade II): <13> + <15> + <35>
+
+Spirit Roundhouse (R2 after Spirit Blade III or Spirit Insight): <42>
+
+Step Spirit Blade (R2 after Fade Slash or Left/Right Fade Slash): <30>
+
+Spirit Insight (O+R2): <27>
+
+Spirit Thrust (Triangle + R2): <27>
+
+Spirit Helm Breaker (Triangle after Spirit Thrust with White Gauge): <11> + <11> + <11> + <11> + <11> + <10> + <10>
+
+Spirit Helm Breaker (Triangle after Spirit Thrust with Yellow Gauge): <18> + <18> + <18> + <16> + <16> + <16> + <16>
+
+Spirit Helm Breaker (Triangle after Spirit Thrust with Red Gauge): <30> + <30> + <30> + <30> + <28> + <28> + <28>
+
+Jump Slash (Triangle in the air): <27>
+
+Jump Spirit Blade (R2 in the air with no Spirit Gauge): <18>
+
+Jump Spirit Blade (R2 in the air with Spirit Gauge): <33>
+
+Jump Rising Slash (Triangle while sliding): <25>
+
+Aerial Spirit Blade (R2 while sliding): <51>
+
+Left/Right Fade Slash (Left/Right L + Triangle + O): <23>
+
+Gauge damage bonuses
+
+White: Attack Power * 1.05
+
+Yellow: Attack Power * 1.12
+
+Red: Attack Power * 1.2

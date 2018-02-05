@@ -1,0 +1,55 @@
+Unsheathe Attack (Triangle when sheathed): <20>
+
+Return Swing (Triangle after Unsheathe Attack): <16>
+
+Side Smash (L^ + Triangle): <15>
+
+Ground Smash I (Triangle): <37>
+
+Ground Smash II (Triangle > Triangle): <22>
+
+Upswing (Triangle > Triangle > Triangle): <86>
+
+Aerial Unsheathe Attack (Triangle in the air): <36>
+
+Aerial Attack (Charge Lv 1) (Long R2 press in the air): <62>
+
+Aerial Attack (Charge Lv 2) (Longer R2 press in the air than Lv 1): <66>
+
+Aerial Attack (Charge Lv 3) (Longer R2 press in the air than Lv 2): <79>
+
+Strike First Step (O): <28>
+
+Strike Second Step (O > O): <32>
+
+Strike Third Step (O > O > O): <45>
+
+Strike Fourth Step (O > O > O > O): <65>
+
+Strike Finish (O > O > O > O > O): <28> + <28> + <100>
+
+Rising Smash (Charge Lv 1) (R2): <19>
+
+Charge Return Swing (R2 > R2): <25>
+
+Charge Return Swing (R2 > R2 during Power Store): <58>
+
+Uppercut Smash (Charge Lv 2) (R2 hold and release): <38>
+
+Superpound (Charge Lv 3) (R2 full charge and release): <15> + <76>
+
+Spinning Bludgeon (release R2 after full charge): <28> + <19> + <19> + <19> + <19> + <19>
+
+Spinning Side Swing (Triangle immediately after Spinning Bludgeon): <15>
+
+Spinning Bludgeon Hook (Triangle after Spinning Bludgeon): <56>
+
+Spinning Bludgeon Slam (nothing after Spinning Bludgeon): <32>
+
+Spinning Bludgeon Upswing (Triangle after 3-4 spins of Spinning Bludgeon): <86>
+
+Strong Charge Strike (Superpound during Power Store): <16> + <16> + <91>
+
+Strong Charge Upper (Uppercut Smash during Power Store): <48>
+
+Aerial Spinning Bludgeon (Slide while holding R2 and release): ( <30> * number of hits) + <100>

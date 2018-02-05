@@ -1,0 +1,45 @@
+Thrust (L^ + Triangle): <10>
+
+Rising Slash (Triangle): <15> + <14>
+
+Backward Sweep (Triangle > Triangle): <18>
+
+Double Slash (Triangle > Triangle > Triangle): <18> + <24>
+
+Overhead Smash (L^ + O): <26>
+
+Sweep (O): <23>
+
+Slam (O > O): <30>
+
+Jumping Slash (Triangle in the air): <15>
+
+Jumping Rush Slash (R2 + X > O): <29>
+
+Kinsect "Target Mark" (R2 mid-combo): <5>
+
+After Red Extract Acquired
+
+Thrust (Attack Up) (L^ + Triangle): <11> + <10>
+
+Rising Slash (Attack Up): 15 + 14 + <15>
+
+Backward Sweep (Attack Up): <15> + <19>
+
+Double Slash (Attack Up): <15> + <14> + <28>
+
+Overhead Smash (Attack Up) (L^ + O): <28>
+
+Sweep (Attack Up) (O): <18> + <21>
+
+Slam (Attack Up) (O > O): <25> + <43>
+
+Jumping Slash (Attack Up) (R2 + X > Triangle): <9> * Number of hits
+
+Jumping Rush Slash (Attack Up) (R2 + X > O): ( <3> * Number of hits) + <31>
+
+Extract Attack Buff Info
+
+Red + White: Attack * 1.08
+
+Red + White + Orange: Attack * 1.12

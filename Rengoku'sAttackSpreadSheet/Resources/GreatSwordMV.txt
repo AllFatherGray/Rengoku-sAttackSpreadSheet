@@ -1,0 +1,73 @@
+Vertical Slash (Triangle): <48>
+
+Rising Slash (Triangle + O): <38>
+
+Cleave (O): <26>
+
+Tackle (Triangle while evading, O > O, O while charging): <26>
+
+Charge II Tackle (O while in a level II charge): <35>
+
+Charge III Tackle (O while in a level III charge): <48>
+
+Diving Cleave (O after Tackle): <71>
+
+Diving Cleave (O after level II Tackle): <85>
+
+Diving Cleave (O after level III Tackle): <110>
+
+Side Strike (Triangle > Triangle): <15>
+
+Charge Slash I (long Triangle press): <48>
+
+Charge Slash II (longer press than I): <70>
+
+Charge Slash III (longer press than II): <90>
+
+Charge Slash (Triangle held too long): <70>
+
+Strong Charge Slash I (long L + Triangle press): <65>
+
+Strong Charge Slash II (longer L + Triangle press than I): <82>
+
+Strong Charge Slash III (longer L + Triangle press than II): <96>
+
+Strong Charge Slash (L + Triangle held too long): <82>
+
+Strong Cleave I (O after Strong Charge Slash I): <60> (*1)
+
+Strong Cleave II (O after Strong Charge Slash II): <65> (*1)
+
+Strong Cleave III (O after Strong Charge Slash III): <79> (*1)
+
+Strong Cleave (O after overcharged Strong Slash): <65> (*1)
+
+True Charge Slash I (long L + Triangle press): <20> + <182>
+
+True Charge Slash II (longer L + Triangle press than I): <20> + <182>
+
+True Charge Slash III (longer L + Triangle press than II): <21> + <210>
+
+True Charge Slash (L + Triangle held too long): <20> + <182>
+
+Kick (Triangle while guarding): <4>
+
+Jump Slash (Triangle while in the air): <69>
+
+Jump Charge Slash I (long Triangle press while in the air): <69>
+
+Jump Charge Slash II (longer Triangle press in the air than I): <85>
+
+Jump Charge Slash III (longer Triangle press in the air than II): <104>
+
+Rising Charge Slash I (Triangle while sliding): <48>
+
+Rising Charge Slash II (longer Triangle press while sliding than I): <73>
+
+Rising Charge Slash III (longer Triangle press while sliding than II): <100>
+
+Falling Thrust I (Triangle after Rising Charge Slash I): <14> * 3 hits (*2)
+
+Falling Thrust II (Triangle after Rising Charge Slash II): <21> * 3 hits (*2)
+
+Falling Thrust III (Triangle after Rising Charge Slash III): <26> * 3 hits (*2)

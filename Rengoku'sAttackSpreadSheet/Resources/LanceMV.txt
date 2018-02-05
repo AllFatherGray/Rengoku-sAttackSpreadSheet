@@ -1,0 +1,49 @@
+Unsheathe Thrust (L + Triangle while unsheathed): <21>
+
+Mid Thrust I (Triangle): <21>
+
+Mid Thrust II (Triangle > Triangle): <21>
+
+Mid Thrust III (Triangle > Triangle > Triangle): <29>
+
+High Thrust I (O): <23>
+
+High Thrust II (O > O): <23>
+
+High Thrust III (O > O > O): <29>
+
+Sweep I (Triangle + O): <21>
+
+Sweep III (Triangle + O): <21>
+
+Jumping Thrust (Triangle in the air): <32>
+
+Guard Thrust (Triangle during Guard): <21>
+
+Cancelled Counter-thrust (R2 + O quick release): <23>
+
+Charged Counter-thrust (hold R2 + O): <42>
+
+Shield Attack (R2 + L^ + Triangle): <14>
+
+Dive Thrust (R2 + L^ + Triangle): <9> + <9> + <9>
+
+Dash Attack (Triangle + O): <11> * Number of hits
+
+Accelerated Dash Attack (after Dashing for a while): <13> * Number of hits)
+
+Finishing Blow (Triangle during Dash Attack): <52>
+
+Two-Step Finishing Blow (Triangle during Accelerated Dash Attack): <26> + <53>
+
+Reverse Attack (Lv + Triangle during Dash Attack): <51>
+
+Accelerated Reverse Attack (Lv + Triangle during Accelerated Dash Attack): <54>
+
+Dash Jump Thrust (X + Triangle during Dash Attack): <25> * Number of hits
+
+Dash Jump Finishing Blow (Triangle during Dash Jump Thrust): <30>
+
+Accelerated Dash Jump Thrust (X + Triangle during Accelerated Dash Attack): <26> * Number of hits
+
+Accelerated Dash Jump Finishing Blow (Triangle during Accelerated Dash Jump Thrust): <58>
