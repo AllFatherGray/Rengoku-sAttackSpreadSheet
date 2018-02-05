@@ -190,7 +190,9 @@ Level 7: +21 Attack and +5% Affinity</value>
     <value>Modifier for Final Raw. 100 is full damage. 80 for Damage to Mast in Training Area.
 This is the percentage taken from the final raw AFTER the motion values modifiers are applied.
 Expect a variance of ~4% due to rounding.
-</value>
+
+Go Here for HitZone Modifiers:
+https://mhworld.kiranico.com/monster</value>
   </data>
   <metadata name="CriticalBoostTips.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>767, 41</value>

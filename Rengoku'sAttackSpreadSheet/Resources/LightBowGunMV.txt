@@ -12,7 +12,7 @@ Detonating Wyvern Bullet
 
 Sniping Wyvern Bullet
 
--20+20+43+43?
+- <20> + <20> + <43> + <43> ?
 
 -There are more hits when further away
 
@@ -22,91 +22,91 @@ Sniping Wyvern Bullet
 
 LV 1 Normal S
 
--Short Distance: 5
+-Short Distance: <5>
 
--Critical Distance: 8
+-Critical Distance: <8>
 
--Long Distance: 1
+-Long Distance: <1>
 
 -Critical Distance is 0.5-2 rolls away
 
 LV 2 Normal S
 
--Short Distance: 13
+-Short Distance: <13>
 
--Critical Distance: 15
+-Critical Distance: <15>
 
--Long Distance: 1
+-Long Distance: <1>
 
 -Critical Distance is 0.5-2 rolls away
 
 LV 3 Normal S
 
--Short Distance: 16
+-Short Distance: <16>
 
--Critical Distance: 20
+-Critical Distance: <20>
 
--Long Distance: 3
+-Long Distance: <3>
 
 -Critical Distance is 0.5-2 rolls away
 
 LV 1 Pierce S
 
--Short Distance: 5 * number of hits
+-Short Distance: <5> * number of hits
 
--Critical Distance: 6 * number of hits
+-Critical Distance: <6> * number of hits
 
--Long Distance: 1 * number of hits
+-Long Distance: <1> * number of hits
 
 -Critical Distance is 1-3 rolls away
 
 LV 2 Pierce S
 
--Short distance: 5 * number of hits
+-Short distance: <5> * number of hits
 
--Critical Distance: 6 * number of hits
+-Critical Distance: <6> * number of hits
 
--Long Distance: 1 * number of hits
+-Long Distance: <1> * number of hits
 
 -Critical Distance is 1-3 rolls away
 
 LV 3 Pierce S
 
--Short Distance: 5 * number of hits
+-Short Distance: <5> * number of hits
 
--Critical Distance: 8 * number of hits
+-Critical Distance: <8> * number of hits
 
--Long Distance: 1 * number of hits
+-Long Distance: <1> * number of hits
 
 -Critical Distance is 1-3 rolls away
 
 LV 1 Pellet S
 
--Short Distance: 6 * 3 hits
+-Short Distance: <6> * 3 hits
 
--Critical Distance: 6 * 3 hits
+-Critical Distance: <6> * 3 hits
 
--Long Distance: 1 * 3 hits
+-Long Distance: <1> * 3 hits
 
 -Critical Distance is 1 roll away
 
 LV 2 Pellet S
 
--Short Distance: 6 * 5 hits
+-Short Distance: <6> * 5 hits
 
--Critical Distance: 6 * 5 hits
+-Critical Distance: <6> * 5 hits
 
--Long Distance: 1 * 5 hits
+-Long Distance: <1> * 5 hits
 
 -Critical Distance is 1 roll away
 
 LV 3 Pellet S
 
--Short Distance: 8 * 6 hits
+-Short Distance: <8> * 6 hits
 
--Critical Distance: 8 * 6 hits
+-Critical Distance: <8> * 6 hits
 
--Long Distance: 1 * 6 hits
+-Long Distance: <1> * 6 hits
 
 -Critical Distance is 1 roll away
 
@@ -277,4 +277,3 @@ LV 2 Exhaust S
 -Range is 5 rolls away
 
 -Exhaust value accumulation is unknown
-

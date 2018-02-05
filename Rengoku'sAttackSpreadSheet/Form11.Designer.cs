@@ -174,7 +174,9 @@ namespace Rengoku_sAttackSpreadSheet {
         ///   Looks up a localized string similar to Modifier for Final Raw. 100 is full damage. 80 for Damage to Mast in Training Area.
         ///This is the percentage taken from the final raw AFTER the motion values modifiers are applied.
         ///Expect a variance of ~4% due to rounding.
-        ///.
+        ///
+        ///Go Here for HitZone Modifiers:
+        ///https://mhworld.kiranico.com/monster.
         /// </summary>
         public static string label9_ToolTip {
             get {

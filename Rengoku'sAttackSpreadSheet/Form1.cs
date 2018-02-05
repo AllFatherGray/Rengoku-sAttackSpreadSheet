@@ -199,19 +199,19 @@ namespace Rengoku_sAttackSpreadSheet
             if(sender == TrueRaw)
             {
                 FakeRaw.Enabled = false;
-                FakeRaw.Value = (int)Math.Round(TrueRaw.Value * CurrentWeaponModifier);
+                FakeRaw.Value = (int)Math.Ceiling(TrueRaw.Value * CurrentWeaponModifier);
                 FakeRaw.Enabled = true;
             }
             else if (sender == FakeRaw)
             {
                 TrueRaw.Enabled = false;
-                TrueRaw.Value = (int)Math.Round(FakeRaw.Value / CurrentWeaponModifier);
+                TrueRaw.Value = (int)Math.Ceiling(FakeRaw.Value / CurrentWeaponModifier);
                 TrueRaw.Enabled = true;
             }
             else
             {
-                FakeRaw.Value = (int)Math.Round(TrueRaw.Value * CurrentWeaponModifier);
-                TrueRaw.Value = (int)Math.Round(FakeRaw.Value / CurrentWeaponModifier);
+                FakeRaw.Value = (int)Math.Ceiling(TrueRaw.Value * CurrentWeaponModifier);
+                TrueRaw.Value = (int)Math.Ceiling(FakeRaw.Value / CurrentWeaponModifier);
             }
             FinalAffinity.Text = TotalAffinity.ToString();
             FinalRawValueLabel.Text = ((int)FinalRaw).ToString();
