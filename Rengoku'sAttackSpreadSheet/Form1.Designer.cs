@@ -314,7 +314,6 @@
             this.label10.TabIndex = 45;
             this.label10.Text = "Element Damage";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NaturalAffinityTip.SetToolTip(this.label10, resources.GetString("label10.ToolTip"));
             // 
             // label4
             // 

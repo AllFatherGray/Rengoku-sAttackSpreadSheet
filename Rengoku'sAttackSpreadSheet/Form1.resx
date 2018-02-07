@@ -167,12 +167,6 @@ If using the Value from the Status screen:
   <metadata name="NaturalAffinityTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>494, 17</value>
   </metadata>
-  <data name="label10.ToolTip" xml:space="preserve">
-    <value>Affinity seen in Equipment Info.
-If using the Value from the Status screen:
- -Remove all Skill Modifiers as they would be counted already.
- - In the case of Weakness Exploit or Attack Boost, just add the amount to Natural Affinity.</value>
-  </data>
   <metadata name="AttackBoostTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>898, 17</value>
   </metadata>

@@ -179,18 +179,6 @@ namespace Rengoku_sAttackSpreadSheet {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Affinity seen in Equipment Info.
-        ///If using the Value from the Status screen:
-        /// -Remove all Skill Modifiers as they would be counted already.
-        /// - In the case of Weakness Exploit or Attack Boost, just add the amount to Natural Affinity..
-        /// </summary>
-        public static string label10_ToolTip {
-            get {
-                return ResourceManager.GetString("label10.ToolTip", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Uses True Raw:
         ///Level 1: +3 Attack Power
         ///Level 2: +6 Attack Power
