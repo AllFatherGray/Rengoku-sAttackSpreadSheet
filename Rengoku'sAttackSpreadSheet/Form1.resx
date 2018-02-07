@@ -167,6 +167,12 @@ If using the Value from the Status screen:
   <metadata name="NaturalAffinityTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>494, 17</value>
   </metadata>
+  <data name="label10.ToolTip" xml:space="preserve">
+    <value>Affinity seen in Equipment Info.
+If using the Value from the Status screen:
+ -Remove all Skill Modifiers as they would be counted already.
+ - In the case of Weakness Exploit or Attack Boost, just add the amount to Natural Affinity.</value>
+  </data>
   <metadata name="AttackBoostTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>898, 17</value>
   </metadata>
@@ -209,6 +215,14 @@ https://mhworld.kiranico.com/monster</value>
   <metadata name="HitZoneTips.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>641, 17</value>
   </metadata>
+  <data name="E.ToolTip" xml:space="preserve">
+    <value>Modifier for Final Raw. 100 is full damage. 80 for Damage to Mast in Training Area.
+This is the percentage taken from the final raw AFTER the motion values modifiers are applied.
+Expect a variance of ~4% due to rounding.
+
+Go Here for HitZone Modifiers:
+https://mhworld.kiranico.com/monster</value>
+  </data>
   <metadata name="WeaponModTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>758, 17</value>
   </metadata>
@@ -239,25 +253,17 @@ https://mhworld.kiranico.com/monster</value>
   <metadata name="CriticalBoostTips.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>767, 41</value>
   </metadata>
-  <data name="E.ToolTip" xml:space="preserve">
-    <value>Modifier for Final Raw. 100 is full damage. 80 for Damage to Mast in Training Area.
-This is the percentage taken from the final raw AFTER the motion values modifiers are applied.
-Expect a variance of ~4% due to rounding.
-
-Go Here for HitZone Modifiers:
-https://mhworld.kiranico.com/monster</value>
-  </data>
-  <data name="label10.ToolTip" xml:space="preserve">
-    <value>Affinity seen in Equipment Info.
-If using the Value from the Status screen:
- -Remove all Skill Modifiers as they would be counted already.
- - In the case of Weakness Exploit or Attack Boost, just add the amount to Natural Affinity.</value>
-  </data>
+  <metadata name="ElementLessBonusTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>909, 41</value>
+  </metadata>
+  <metadata name="ElementLessBonusTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>909, 41</value>
+  </metadata>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>38</value>
+    <value>98</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

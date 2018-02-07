@@ -115,6 +115,34 @@ namespace Rengoku_sAttackSpreadSheet
                 default: return 0;
             }
         }
+        public static int GetAttackModifier(FelyneFood f)
+        {
+            switch (f)
+            {
+                case FelyneFood.AuS: return 5;
+                case FelyneFood.AuM: return 10;
+                case FelyneFood.AuL: return 15;
+                default: return 0;
+            }
+        }
+        public static int GetAttackModifier(DemonDrugs a)
+        {
+            switch (a)
+            {
+                case DemonDrugs.Normal: return 5;
+                case DemonDrugs.Mega: return 7;
+                default: return 0;
+            }
+        }
+        public static int GetAttackModifier(SeedPill a)
+        {
+            switch (a)
+            {
+                case SeedPill.Seed: return 10;
+                case SeedPill.Pill: return 25;
+                default: return 0;
+            }
+        }
         public static int GetAffinityModifier(AttackBoost a)
         {
             switch (a)
@@ -298,6 +326,25 @@ namespace Rengoku_sAttackSpreadSheet
             PowerCharm,
             PowerTalon,
             Both
+        }
+        public enum DemonDrugs
+        {
+            None,
+            Normal,
+            Mega
+        }
+        public enum FelyneFood
+        {
+            None,
+            AuS,
+            AuM,
+            AuL
+        }
+        public enum SeedPill
+        {
+            None,
+            Seed,
+            Pill
         }
     }
 }

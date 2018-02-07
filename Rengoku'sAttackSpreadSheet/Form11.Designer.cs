@@ -115,6 +115,16 @@ namespace Rengoku_sAttackSpreadSheet {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Point similar to {X=909,Y=41}.
+        /// </summary>
+        public static System.Drawing.Point ElementLessBonusTip_TrayLocation {
+            get {
+                object obj = ResourceManager.GetObject("ElementLessBonusTip.TrayLocation", resourceCulture);
+                return ((System.Drawing.Point)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Point similar to {X=132,Y=17}.
         /// </summary>
         public static System.Drawing.Point FakeRawTip_TrayLocation {

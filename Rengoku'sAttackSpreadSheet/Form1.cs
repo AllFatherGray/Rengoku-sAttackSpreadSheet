@@ -31,6 +31,10 @@ namespace Rengoku_sAttackSpreadSheet
         private int ResentmentBonus => WeaponDataBase.GetAttackModifier((Resentment)ResentmentDropBox.SelectedIndex);
         private int AttackBonus => WeaponDataBase.GetAttackModifier((AttackBoost)AttackBoostDropBox.SelectedIndex);
         private int CharmBonus => WeaponDataBase.GetAttackModifier((PowerCharms)CharmsDropDown.SelectedIndex);
+        private int FelyneBonus => WeaponDataBase.GetAttackModifier((FelyneFood)FelyneFoodDropBox.SelectedIndex);
+        private int DemonBonus => WeaponDataBase.GetAttackModifier((DemonDrugs)DemonDrugDropBox.SelectedIndex);
+        private int SeedPillBonus => WeaponDataBase.GetAttackModifier((SeedPill)SeedPillDropBox.SelectedIndex);
+
 
         // Affinity Related Bonuses
         private int CriticalEyeBonus => WeaponDataBase.GetAffinityModifier((CriticalEye)CriticalEyeDropBox.SelectedIndex);
@@ -91,7 +95,7 @@ namespace Rengoku_sAttackSpreadSheet
                 // Using Current User Values or A default value to look at Motion Values?
                 decimal CurrentValue = !ShowModToggle.Checked ? TrueRaw.Value : 100;
 
-                return (CurrentValue + ResentmentBonus + AttackBonus + CharmBonus) * NonElementalBonus * HeroicsBonus;
+                return (CurrentValue + ResentmentBonus + AttackBonus + CharmBonus + FelyneBonus + DemonBonus + SeedPillBonus) * NonElementalBonus * HeroicsBonus;
             }
         }
         private decimal FinalRaw
@@ -140,6 +144,9 @@ namespace Rengoku_sAttackSpreadSheet
             ResentmentDropBox.SelectedIndexChanged += UpdateEvent;
             CriticalBoostDropBox.SelectedIndexChanged += UpdateEvent;
             CharmsDropDown.SelectedIndexChanged += UpdateEvent;
+            FelyneFoodDropBox.SelectedIndexChanged += UpdateEvent;
+            DemonDrugDropBox.SelectedIndexChanged += UpdateEvent;
+            SeedPillDropBox.SelectedIndexChanged += UpdateEvent;
 
             TrueRaw.ValueChanged += UpdateEvent;
             FakeRaw.ValueChanged += UpdateEvent;
@@ -178,6 +185,15 @@ namespace Rengoku_sAttackSpreadSheet
 
             CharmsDropDown.Items.AddRange(Enum.GetValues(typeof(PowerCharms)).Cast<object>().ToArray());
             CharmsDropDown.SelectedIndex = 0;
+
+            FelyneFoodDropBox.Items.AddRange(Enum.GetValues(typeof(FelyneFood)).Cast<object>().ToArray());
+            FelyneFoodDropBox.SelectedIndex = 0;
+
+            DemonDrugDropBox.Items.AddRange(Enum.GetValues(typeof(DemonDrugs)).Cast<object>().ToArray());
+            DemonDrugDropBox.SelectedIndex = 0;
+
+            SeedPillDropBox.Items.AddRange(Enum.GetValues(typeof(SeedPill)).Cast<object>().ToArray());
+            SeedPillDropBox.SelectedIndex = 0;
             #endregion
             #region Setting Misc Fields
             TrueRaw.Value = 100;
