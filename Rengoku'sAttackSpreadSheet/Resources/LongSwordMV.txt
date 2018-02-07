@@ -16,7 +16,7 @@ Spirit Blade II (R2 R2 with Spirit Gauge): <33>
 
 Spirit Blade III (R2 after Spirit Blade II): <13> + <15> + <35>
 
-Spirit Roundhouse (R2 after Spirit Blade III or Spirit Insight): <42>
+Spirit Roundhouse (R2 after Spirit Blade III or Spirit Insight): <38>
 
 Step Spirit Blade (R2 after Fade Slash or Left/Right Fade Slash): <30>
 
@@ -46,6 +46,6 @@ Gauge damage bonuses
 
 White: Attack Power * 1.05
 
-Yellow: Attack Power * 1.12
+Yellow: Attack Power * 1.1
 
 Red: Attack Power * 1.2

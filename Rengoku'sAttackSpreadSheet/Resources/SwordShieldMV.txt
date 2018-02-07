@@ -1,37 +1,35 @@
-Rush Slash (Triangle + O): <19>
+Chop:               <14>
 
-Downward Slash (Triangle): <15>
+Side Slash:         <13>
 
-Side Slash (Triangle > Triangle): <13>
+Sword/Shield Combo: <10> + <20>
 
-Sword & Shield Combo (Triangle > Triangle > Triangle): <11> + <20>
+Lateral Slash:      <22>
 
-Horizontal Slash (O): <23>
+Return Stroke:      <21>
 
-Slash Return (O > O): <21>
+Roundslash:         <24>
 
-Rotating Slash (O > O > O): <25>
+Charged Slash:      <40>
 
-Shield Attack (L^ + O): <9>
+Scaling Slash:      <35>
 
-Back Knuckle (L^ + O > O): <16>
+Jumping Slash:      <20>
 
-Hard Bash (L^ + O > O > O): <31>
+Rising Slash:       <14>
 
-Charge Slash (Lv + O): <30> (Shield) + <38>
+Advancing Slash:    <18>
 
-Climbing Slash (automatic after Charge Slash): <34>
+Spiral Slash:       <16>
 
-Jump Slash (Triangle in the air): <20>
+Thrust:             <22>
 
-Fall Bash (O after Climbing Slash): <44> + <39>
+Guard Slash:        <14>
 
-Turning Slash (L in any direction + Triangle mid-combo): <17>
+Shield Attack:      <8>
 
-Thrust (Triangle after Turning Slash): <22>
+Shield Bash:        <16>
 
-Rising Slash (Guard + Triangle): <15>
+Hard Bash:          <31>
 
-Jump Rush Slash (Triangle + O while sliding): <16>
-
-Falling Thrust (Triangle after Climbing Slash...I think): <15> * 2 hits
+Falling Bash:       <43> + <39>

@@ -101,6 +101,20 @@ namespace Rengoku_sAttackSpreadSheet {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Modifier for Final Raw. 100 is full damage. 80 for Damage to Mast in Training Area.
+        ///This is the percentage taken from the final raw AFTER the motion values modifiers are applied.
+        ///Expect a variance of ~4% due to rounding.
+        ///
+        ///Go Here for HitZone Modifiers:
+        ///https://mhworld.kiranico.com/monster.
+        /// </summary>
+        public static string E_ToolTip {
+            get {
+                return ResourceManager.GetString("E.ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Point similar to {X=132,Y=17}.
         /// </summary>
         public static System.Drawing.Point FakeRawTip_TrayLocation {
@@ -151,6 +165,18 @@ namespace Rengoku_sAttackSpreadSheet {
         public static string label1_ToolTip {
             get {
                 return ResourceManager.GetString("label1.ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Affinity seen in Equipment Info.
+        ///If using the Value from the Status screen:
+        /// -Remove all Skill Modifiers as they would be counted already.
+        /// - In the case of Weakness Exploit or Attack Boost, just add the amount to Natural Affinity..
+        /// </summary>
+        public static string label10_ToolTip {
+            get {
+                return ResourceManager.GetString("label10.ToolTip", resourceCulture);
             }
         }
         

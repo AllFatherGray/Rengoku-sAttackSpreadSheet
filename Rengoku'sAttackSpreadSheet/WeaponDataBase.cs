@@ -19,6 +19,19 @@ namespace Rengoku_sAttackSpreadSheet
             };
         }
         #region Class Methods
+        public static decimal ApplyAffinity(decimal CurrentValue, int TotalAffinity, decimal CritBoostBonus)
+        {
+            // Affinity Check
+            if (TotalAffinity > 0)
+            {
+                return ((CurrentValue * ((100m - TotalAffinity) / 100m))) + (int)((CurrentValue * (((TotalAffinity) / 100m)) * CritBoostBonus));
+            }
+            else if (TotalAffinity < 0)
+            {
+                return ((CurrentValue * ((100m + TotalAffinity) / 100m))) + (int)((CurrentValue * (((-TotalAffinity) / 100m)) * MHConstants.FeebleHit));
+            }
+            return CurrentValue;
+        }
         public static decimal GetWeaponModifier(WeaponClass w)
         {
             switch(w)
@@ -48,7 +61,7 @@ namespace Rengoku_sAttackSpreadSheet
             }
         }
         public static string GetWeaponMotionValues(WeaponClass w) => WeaponInfo[w] ?? string.Empty;
-        public static decimal GetSharpnessModifier(SharpnessColor s)
+        public static decimal GetRawSharpnessModifier(SharpnessColor s)
         {
             switch (s)
             {
@@ -58,6 +71,19 @@ namespace Rengoku_sAttackSpreadSheet
                 case SharpnessColor.Green: return 1.05m;
                 case SharpnessColor.Blue: return 1.20m;
                 case SharpnessColor.White: return 1.32m;
+                default: return 0;
+            }
+        }
+        public static decimal GetElementalSharpnessModifier(SharpnessColor s)
+        {
+            switch (s)
+            {
+                case SharpnessColor.Red: return 0.25m;
+                case SharpnessColor.Orange: return 0.50m;
+                case SharpnessColor.Yellow: return 0.75m;
+                case SharpnessColor.Green: return 1.00m;
+                case SharpnessColor.Blue: return 1.0625m;
+                case SharpnessColor.White: return 1.125m;
                 default: return 0;
             }
         }
@@ -135,16 +161,16 @@ namespace Rengoku_sAttackSpreadSheet
                 default: return 0;
             }
         }
-        public static int GetHeroicsModifier(Heroics h)
+        public static decimal GetHeroicsModifier(Heroics h)
         {
             switch (h)
             {
-                case Heroics.Level_1: return 5;
-                case Heroics.Level_2: return 10;
-                case Heroics.Level_3: return 15;
-                case Heroics.Level_4: return 20;
-                case Heroics.Level_5: return 30;
-                default: return 0;
+                case Heroics.Level_1: return 1.05m;
+                case Heroics.Level_2: return 1.10m;
+                case Heroics.Level_3: return 1.15m;
+                case Heroics.Level_4: return 1.20m;
+                case Heroics.Level_5: return 1.30m;
+                default: return 1;
             }
         }
         public static int GetAttackModifier(PowerCharms pc)
@@ -182,6 +208,24 @@ namespace Rengoku_sAttackSpreadSheet
             Bow,
             LightBowGun,
             HeavyBowGun
+        }
+        public static class WeaponClassExtension
+        {
+            public static bool isBladeMaster(this WeaponClass wc)
+            {
+                return !isGunner(wc);
+            }
+            public static bool isGunner(this WeaponClass wc)
+            {
+                switch(wc)
+                {
+                    case WeaponClass.Bow:
+                    case WeaponClass.HeavyBowGun:
+                    case WeaponClass.LightBowGun:
+                        return true;
+                    default: return false;
+                }
+            }
         }
         public enum SharpnessColor
         {

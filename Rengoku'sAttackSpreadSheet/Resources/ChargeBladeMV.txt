@@ -1,75 +1,49 @@
-Sword: Rising Slash (Triangle): <12>
+Sword Mode:
 
-Sword: Return Stroke (Triangle > Triangle): <15>
+Morph to Sword:            <28>
 
-Sword: Roundslash (Triangle > Triangle > Triangle): <28>
+Jumping Morph to Sword:    <22>
 
-Sword: Dash Slash (Triangle + O): <20>
+Weak Slash:                <12>
 
-Sword: Charged Single Slash (O): <13>
+Return Stroke:             <15>
 
-Sword: Charged Double Slash (Hold and release O): <28> + <19>
+Spinning Slash:            <28>
 
-Sword: Shield Attack (Triangle + O mid-combo): <13> + <9>
+Charged Rising Slash:      <13>
 
-Sword: High Pressure Element Slash (Hold Triangle while charging during Element Enhancement): <75>
+Charged Double Slash:      <27> + <18>
 
-Sword: Morph to Axe (R2): <45>
+Shield Thrust:             <12> + <8>
 
-Sword: Moving Slash (L in any direction + O): <25>
+Forward Slash:             <20>
 
-Sword: Jump Slash (Triangle while jumping): <21>
+Jumping Slash:             <22>
 
-Sword: Jump Morph Slash (R2 while jumping): <45>
+Sliding Slash:             <25>
 
-Sword: Jump Rising Slash (Triangle while sliding): <46>
+Condensed Elemental Slash: <75>
 
-Axe: Jump Slash (Triangle while jumping): <46>
+Axe Mode:
 
-Axe: Jump Morph Slash (R2 while jumping): <21>
+Morph to Axe:                               <44>
 
-Axe: Rising Slash (Triangle): <36>
+Jumping Morph to Axe:                       <46>
 
-Axe: Overhead Slash (Triangle > Triangle): <37>
+Rising Slash:                               <35>
 
-Axe: Slam Attack (L^ + Triangle): <45>
+Overhead Slash:                             <37>
 
-Axe: Element Discharge 1 (With Phials: O when not Enhanced): <21> + 4 Explosion damage
+Dash Slam:                                  <45>
 
-Axe: Element Discharge 2 (With Phials: O > O when not Enhanced): <11> + <68> + (4 * 2) Explosion damage
+Jumping Slash:                              <46>
 
-Axe: Amped Element Discharge (With Phials: Triangle + O): <93> + (8 * 3) Explosion damage
+Elemental Discharge I:                      <21>
 
-Axe: Element Discharge 1 (Without Phials: O when not Enhanced): <21>
+Elemental Discharge II:                     <10> + <66>
 
-Axe: Element Discharge 2 (Without Phials: O > O when not Enhanced): <11> + <68>
+Amped Elemental Discharge:                  <90>
 
-Axe: Amped Element Discharge (Without Phials: Triangle + O): <93>
+Super Amped Elemental Discharge w/o Phials: <15> + <90>
 
-Axe: Morph to Sword (R2): <28>
-
-After Element Enhancement (idk what this is, but it's probably an old mechanic)
-
-Axe: Rising Slash (Triangle): <38>
-
-Axe: Overhead Slash (Triangle > Triangle): <41>
-
-Axe: Slam Attack (L^ + Triangle): <49>
-
-Axe: Element Discharge 1 (O with Phials): <22> + <4> Explosion damage
-
-Axe: Element Discharge 2 (O > O with Phials): <11> + <74> + (4 * 2) Explosion damage
-
-Axe: Amped Element Discharge (Triangle + O from Lv + Triangle with Phials): <102> + (10 * 3) Explosion damage
-
-Axe: Super Amped Element Discharge (Triangle + O with Phials): <18> + <100> + <108> + <23> * ? Explosion damage
-
-Axe: Element Discharge 1 (O without Phials): <22>
-
-Axe: Element Discharge 2 (O > O without Phials): <11> + <74>
-
-Axe: Amped Element Discharge (Triangle + O from Lv + Triangle without Phials): <102>
-
-Axe: Super Amped Element Discharge (Triangle + O without Phials): <18> + <100>
-
-Sword: 2 Damage per Phial Explosion
+Super Amped Elemental Discharge w/ Phials:  <15> , <90> , <97> , Explosionx(Phial Number)

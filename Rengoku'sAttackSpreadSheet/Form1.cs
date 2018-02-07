@@ -13,17 +13,21 @@ namespace Rengoku_sAttackSpreadSheet
 {
     public partial class CalculatorUI : Form
     {
+        readonly EventHandler UpdateEvent = null;
         #region Properties
         private WeaponClass CurrentWeapon => (WeaponClass)WeaponSelectDropdownBox.SelectedIndex;
         private SharpnessColor CurrentSharpness => (SharpnessColor)SharpnessDropdownBox.SelectedIndex;
 
         // Modifiers
-        private decimal CurrentSharpnessModifier => WeaponDataBase.GetSharpnessModifier(CurrentSharpness);
+        private decimal CurrentRawSharpnessModifier => WeaponDataBase.GetRawSharpnessModifier(CurrentSharpness);
+        private decimal CurrentElementalSharpnessModifier => WeaponDataBase.GetElementalSharpnessModifier(CurrentSharpness);
         private decimal CurrentWeaponModifier => WeaponDataBase.GetWeaponModifier(CurrentWeapon);
         private decimal CurrentHitZoneModifier => HitzoneModifier.Value / 100.0M;
+        private decimal CurrentElementalHitZoneModifier => ElementalHitzoneModifier.Value / 100.0M;
 
         // Raw Attack Related Bonuses
         private decimal HeroicsBonus => WeaponDataBase.GetHeroicsModifier((Heroics)HeroicsDropBox.SelectedIndex);
+        private decimal NonElementalBonus => (!ElementLessBonusBox.Checked || ElementalDamage.Value > 0) ? 1 : 1.1m;
         private int ResentmentBonus => WeaponDataBase.GetAttackModifier((Resentment)ResentmentDropBox.SelectedIndex);
         private int AttackBonus => WeaponDataBase.GetAttackModifier((AttackBoost)AttackBoostDropBox.SelectedIndex);
         private int CharmBonus => WeaponDataBase.GetAttackModifier((PowerCharms)CharmsDropDown.SelectedIndex);
@@ -40,7 +44,7 @@ namespace Rengoku_sAttackSpreadSheet
             get
             {
                 string nextMV = WeaponDataBase.GetWeaponMotionValues(CurrentWeapon);
-                decimal tempFinalRaw = FinalRaw;
+                decimal tempFinalRaw = WeaponDataBase.ApplyAffinity(TotalRaw, TotalAffinity, CritBoostBonus); ;
                 switch(CurrentWeapon)
                 {
                     case WeaponClass.HeavyBowGun:
@@ -62,7 +66,7 @@ namespace Rengoku_sAttackSpreadSheet
                                     {
                                         decimal MotionValue = Decimal.Parse(CurrentWord.Replace("<", string.Empty).Replace(">", string.Empty)) / 100m;
 
-                                        words[i] = ((int)Math.Ceiling(MotionValue * tempFinalRaw * CurrentHitZoneModifier)).ToString() + (CurrentWord.Last() == '>' ? ' ' : CurrentWord.Last());
+                                        words[i] = (Math.Round( tempFinalRaw * CurrentRawSharpnessModifier  * CurrentHitZoneModifier * MotionValue)).ToString() + (CurrentWord.Last() == '>' ? ' ' : CurrentWord.Last());
                                     }
                                     catch
                                     {
@@ -77,33 +81,31 @@ namespace Rengoku_sAttackSpreadSheet
                 return nextMV;
             }
         }
-        private decimal FinalRaw
+        /// <summary>
+        /// Raw Before any Affinity, Sharpness or Hitzone Modifiers
+        /// </summary>
+        private decimal TotalRaw
         {
             get
             {
                 // Using Current User Values or A default value to look at Motion Values?
                 decimal CurrentValue = !ShowModToggle.Checked ? TrueRaw.Value : 100;
 
-                // Add Misc Attack Bonus
-                CurrentValue += (ResentmentBonus + AttackBonus + CharmBonus);
-
-                // Add Heroics Bonus
-                CurrentValue += Math.Ceiling((CurrentValue * HeroicsBonus) / 100);
-
-                // Add Heroics Bonus
-                CurrentValue = Math.Ceiling((CurrentValue * CurrentSharpnessModifier));
-
-                // Affinity Check
-                if(TotalAffinity > 0)
-                {
-                    return (int)((CurrentValue * ((100m - TotalAffinity) / 100m))) + (int)((CurrentValue * (((TotalAffinity) / 100m)) * CritBoostBonus));
-                }
-                else if(TotalAffinity < 0)
-                {
-                    return (int)((CurrentValue * ((100m + TotalAffinity) / 100m))) + (int)((CurrentValue * (((-TotalAffinity) / 100m)) * MHConstants.FeebleHit));
-                }
-
-                return (CurrentValue);
+                return (CurrentValue + ResentmentBonus + AttackBonus + CharmBonus) * NonElementalBonus * HeroicsBonus;
+            }
+        }
+        private decimal FinalRaw
+        {
+            get
+            {
+                return (int)WeaponDataBase.ApplyAffinity(TotalRaw * CurrentRawSharpnessModifier, TotalAffinity, CritBoostBonus);
+            }
+        }
+        private decimal FinalElementalDamage
+        {
+            get
+            {
+                return (int) (ElementalDamage.Value / 10) * CurrentElementalSharpnessModifier * CurrentElementalHitZoneModifier;
             }
         }
         private int TotalAffinity
@@ -123,28 +125,31 @@ namespace Rengoku_sAttackSpreadSheet
         public CalculatorUI()
         {
             InitializeComponent();
+            UpdateEvent = (sender, args) => UpdateValues(sender, args);
         }
         private void InitControls()
         {
             #region Adding Events
-            WeaponSelectDropdownBox.SelectedIndexChanged += (sender, args) => UpdateValues(sender, args);
-            SharpnessDropdownBox.SelectedIndexChanged += (sender, args) => UpdateValues(sender, args);
+            WeaponSelectDropdownBox.SelectedIndexChanged += UpdateEvent;
+            SharpnessDropdownBox.SelectedIndexChanged += UpdateEvent;
 
-            AttackBoostDropBox.SelectedIndexChanged += (sender, args) => UpdateValues(sender, args);
-            CriticalEyeDropBox.SelectedIndexChanged += (sender, args) => UpdateValues(sender, args);
-            WeaknessExploitDropBox.SelectedIndexChanged += (sender, args) => UpdateValues(sender, args);
-            HeroicsDropBox.SelectedIndexChanged += (sender, args) => UpdateValues(sender, args);
-            ResentmentDropBox.SelectedIndexChanged += (sender, args) => UpdateValues(sender, args);
-            CriticalBoostDropBox.SelectedIndexChanged += (sender, args) => UpdateValues(sender, args);
-            CharmsDropDown.SelectedIndexChanged += (sender, args) => UpdateValues(sender, args);
+            AttackBoostDropBox.SelectedIndexChanged += UpdateEvent;
+            CriticalEyeDropBox.SelectedIndexChanged += UpdateEvent;
+            WeaknessExploitDropBox.SelectedIndexChanged += UpdateEvent;
+            HeroicsDropBox.SelectedIndexChanged += UpdateEvent;
+            ResentmentDropBox.SelectedIndexChanged += UpdateEvent;
+            CriticalBoostDropBox.SelectedIndexChanged += UpdateEvent;
+            CharmsDropDown.SelectedIndexChanged += UpdateEvent;
 
-            TrueRaw.ValueChanged += (sender, args) => UpdateValues(sender, args);
-            FakeRaw.ValueChanged += (sender, args) => UpdateValues(sender, args);
-            NaturalAffinity.ValueChanged += (sender, args) => UpdateValues(sender, args);
-            HitzoneModifier.ValueChanged += (sender, args) => UpdateValues(sender, args);
+            TrueRaw.ValueChanged += UpdateEvent;
+            FakeRaw.ValueChanged += UpdateEvent;
+            ElementalDamage.ValueChanged += UpdateEvent;
+            NaturalAffinity.ValueChanged += UpdateEvent;
+            HitzoneModifier.ValueChanged += UpdateEvent;
+            ElementalHitzoneModifier.ValueChanged += UpdateEvent;
 
-            ShowModToggle.CheckedChanged += (sender, args) => UpdateValues(sender, args);
-
+            ShowModToggle.CheckedChanged += UpdateEvent;
+            ElementLessBonusBox.CheckedChanged += UpdateEvent;
             #endregion
             #region Populating DropDowns
             WeaponSelectDropdownBox.Items.AddRange(Enum.GetValues(typeof(WeaponClass)).Cast<object>().ToArray());
@@ -194,25 +199,21 @@ namespace Rengoku_sAttackSpreadSheet
         {
             MotionValueBox.Text = CurrentWeaponMotionValues;
             WeaponClassModifierLabel.Text = CurrentWeaponModifier.ToString();
-            SharpnessModifierLabel.Text = CurrentSharpnessModifier.ToString();
-            
-            if(sender == TrueRaw)
+            SharpnessModifierLabel.Text = CurrentRawSharpnessModifier.ToString();
+
+            if (sender == TrueRaw || sender == WeaponSelectDropdownBox)
             {
-                FakeRaw.Enabled = false;
-                FakeRaw.Value = (int)Math.Ceiling(TrueRaw.Value * CurrentWeaponModifier);
-                FakeRaw.Enabled = true;
+                FakeRaw.ValueChanged -= UpdateEvent;
+                FakeRaw.Value = (int)(TrueRaw.Value * CurrentWeaponModifier);
+                FakeRaw.ValueChanged += UpdateEvent;
             }
             else if (sender == FakeRaw)
             {
-                TrueRaw.Enabled = false;
-                TrueRaw.Value = (int)Math.Ceiling(FakeRaw.Value / CurrentWeaponModifier);
-                TrueRaw.Enabled = true;
+                TrueRaw.ValueChanged -= UpdateEvent;
+                TrueRaw.Value = (int)(FakeRaw.Value / CurrentWeaponModifier);
+                TrueRaw.ValueChanged += UpdateEvent;
             }
-            else
-            {
-                FakeRaw.Value = (int)Math.Ceiling(TrueRaw.Value * CurrentWeaponModifier);
-                TrueRaw.Value = (int)Math.Ceiling(FakeRaw.Value / CurrentWeaponModifier);
-            }
+            FinalElemental.Text = ((int)FinalElementalDamage).ToString();
             FinalAffinity.Text = TotalAffinity.ToString();
             FinalRawValueLabel.Text = ((int)FinalRaw).ToString();
         }
