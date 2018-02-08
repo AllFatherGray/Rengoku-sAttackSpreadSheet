@@ -213,10 +213,6 @@ namespace Rengoku_sAttackSpreadSheet
         /// <param name="e"></param>
         private void UpdateValues(object sender, EventArgs e)
         {
-            MotionValueBox.Text = CurrentWeaponMotionValues;
-            WeaponClassModifierLabel.Text = CurrentWeaponModifier.ToString();
-            SharpnessModifierLabel.Text = CurrentRawSharpnessModifier.ToString();
-
             if (sender == TrueRaw || sender == WeaponSelectDropdownBox)
             {
                 FakeRaw.ValueChanged -= UpdateEvent;
@@ -229,6 +225,9 @@ namespace Rengoku_sAttackSpreadSheet
                 TrueRaw.Value = (int)(FakeRaw.Value / CurrentWeaponModifier);
                 TrueRaw.ValueChanged += UpdateEvent;
             }
+            MotionValueBox.Text = CurrentWeaponMotionValues;
+            WeaponClassModifierLabel.Text = CurrentWeaponModifier.ToString();
+            SharpnessModifierLabel.Text = CurrentRawSharpnessModifier.ToString();
             FinalElemental.Text = ((int)FinalElementalDamage).ToString();
             FinalAffinity.Text = TotalAffinity.ToString();
             FinalRawValueLabel.Text = ((int)FinalRaw).ToString();
