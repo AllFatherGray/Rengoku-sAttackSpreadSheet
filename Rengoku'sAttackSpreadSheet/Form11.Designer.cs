@@ -209,6 +209,26 @@ namespace Rengoku_sAttackSpreadSheet {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Boolean similar to True.
+        /// </summary>
+        public static bool menuStrip1_Locked {
+            get {
+                object obj = ResourceManager.GetObject("menuStrip1.Locked", resourceCulture);
+                return ((bool)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Point similar to {X=288,Y=59}.
+        /// </summary>
+        public static System.Drawing.Point menuStrip1_TrayLocation {
+            get {
+                object obj = ResourceManager.GetObject("menuStrip1.TrayLocation", resourceCulture);
+                return ((System.Drawing.Point)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Point similar to {X=248,Y=17}.
         /// </summary>
         public static System.Drawing.Point MotionValue_TrayLocation {
@@ -246,6 +266,16 @@ namespace Rengoku_sAttackSpreadSheet {
         public static System.Drawing.Point NaturalAffinityTip_TrayLocation {
             get {
                 object obj = ResourceManager.GetObject("NaturalAffinityTip.TrayLocation", resourceCulture);
+                return ((System.Drawing.Point)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Point similar to {X=17,Y=59}.
+        /// </summary>
+        public static System.Drawing.Point PeekPerfoemanceTip_TrayLocation {
+            get {
+                object obj = ResourceManager.GetObject("PeekPerfoemanceTip.TrayLocation", resourceCulture);
                 return ((System.Drawing.Point)(obj));
             }
         }

@@ -125,6 +125,16 @@ namespace Rengoku_sAttackSpreadSheet
                 default: return 0;
             }
         }
+        public static int GetAttackModifier(PeakPerformance p)
+        {
+            switch (p)
+            {
+                case PeakPerformance.Level_1: return 5;
+                case PeakPerformance.Level_2: return 10;
+                case PeakPerformance.Level_3: return 20;
+                default: return 0;
+            }
+        }
         public static int GetAttackModifier(DemonDrugs a)
         {
             switch (a)
@@ -313,6 +323,13 @@ namespace Rengoku_sAttackSpreadSheet
             Level_5
         }
         public enum WeaknessExploit
+        {
+            None,
+            Level_1,
+            Level_2,
+            Level_3
+        }
+        public enum PeakPerformance
         {
             None,
             Level_1,

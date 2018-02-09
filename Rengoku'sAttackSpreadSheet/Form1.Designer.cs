@@ -47,7 +47,6 @@
             this.TrueRawTip = new System.Windows.Forms.ToolTip(this.components);
             this.FakeRawTip = new System.Windows.Forms.ToolTip(this.components);
             this.MotionValue = new System.Windows.Forms.ToolTip(this.components);
-            this.ShowModToggle = new System.Windows.Forms.CheckBox();
             this.ShowModTip = new System.Windows.Forms.ToolTip(this.components);
             this.NaturalAffinityLabel = new System.Windows.Forms.Label();
             this.NaturalAffinity = new System.Windows.Forms.NumericUpDown();
@@ -73,6 +72,8 @@
             this.HitZoneTips = new System.Windows.Forms.ToolTip(this.components);
             this.E = new System.Windows.Forms.Label();
             this.WeaponModTip = new System.Windows.Forms.ToolTip(this.components);
+            this.WeaponSpecific = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
             this.AttackBoostTip = new System.Windows.Forms.ToolTip(this.components);
             this.CriticalEyeTip = new System.Windows.Forms.ToolTip(this.components);
             this.WeaknessExploitTip = new System.Windows.Forms.ToolTip(this.components);
@@ -82,6 +83,9 @@
             this.CriticalBoostDropBox = new System.Windows.Forms.ComboBox();
             this.CriticalBoostLabel = new System.Windows.Forms.Label();
             this.CharmsTip = new System.Windows.Forms.ToolTip(this.components);
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.CriticalBoostTips = new System.Windows.Forms.ToolTip(this.components);
             this.MotionValuePanel = new System.Windows.Forms.Panel();
             this.ElementalHitzoneModifier = new System.Windows.Forms.NumericUpDown();
@@ -92,26 +96,29 @@
             this.ElementLessBonusTip = new System.Windows.Forms.ToolTip(this.components);
             this.ModifierTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label17 = new System.Windows.Forms.Label();
+            this.PeekPerformDropBox = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.WeaponSpecific = new System.Windows.Forms.TabPage();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.FelyneFoodDropBox = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.DemonDrugDropBox = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.SeedPillDropBox = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.DemonDrugDropBox = new System.Windows.Forms.ComboBox();
+            this.FelyneFoodDropBox = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.PeekPerfoemanceTip = new System.Windows.Forms.ToolTip(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MVTTStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.ShowModToggle = new System.Windows.Forms.ToolStripMenuItem();
+            this.UseAffinityToggle = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.TrueRaw)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FakeRaw)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NaturalAffinity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HitzoneModifier)).BeginInit();
+            this.WeaponSpecific.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ElementalHitzoneModifier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ElementalDamage)).BeginInit();
             this.ModifierTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.WeaponSpecific.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MotionValueTitleBar
@@ -270,17 +277,6 @@
             this.FinalRawValueLabel.Text = "0";
             this.FinalRawValueLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ShowModToggle
-            // 
-            this.ShowModToggle.Location = new System.Drawing.Point(641, 13);
-            this.ShowModToggle.Name = "ShowModToggle";
-            this.ShowModToggle.Size = new System.Drawing.Size(81, 17);
-            this.ShowModToggle.TabIndex = 17;
-            this.ShowModToggle.Text = "Show Mod";
-            this.ShowModTip.SetToolTip(this.ShowModToggle, "If Checked, the original values used for calculations will be shown.\r\nUseful for " +
-        "the curious.\r\nJust set Sharpness to Yellow and Turn off all Skill Modifiers!");
-            this.ShowModToggle.UseVisualStyleBackColor = true;
-            // 
             // NaturalAffinityLabel
             // 
             this.NaturalAffinityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -392,7 +388,7 @@
             this.AttackBoostDropBox.CausesValidation = false;
             this.AttackBoostDropBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.AttackBoostDropBox.FormattingEnabled = true;
-            this.AttackBoostDropBox.Location = new System.Drawing.Point(106, 32);
+            this.AttackBoostDropBox.Location = new System.Drawing.Point(105, 32);
             this.AttackBoostDropBox.Name = "AttackBoostDropBox";
             this.AttackBoostDropBox.Size = new System.Drawing.Size(94, 21);
             this.AttackBoostDropBox.TabIndex = 23;
@@ -412,7 +408,7 @@
             this.WeaknessExploitDropBox.CausesValidation = false;
             this.WeaknessExploitDropBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.WeaknessExploitDropBox.FormattingEnabled = true;
-            this.WeaknessExploitDropBox.Location = new System.Drawing.Point(106, 97);
+            this.WeaknessExploitDropBox.Location = new System.Drawing.Point(105, 97);
             this.WeaknessExploitDropBox.Name = "WeaknessExploitDropBox";
             this.WeaknessExploitDropBox.Size = new System.Drawing.Size(94, 21);
             this.WeaknessExploitDropBox.TabIndex = 27;
@@ -422,7 +418,7 @@
             this.HeroicsDropBox.CausesValidation = false;
             this.HeroicsDropBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.HeroicsDropBox.FormattingEnabled = true;
-            this.HeroicsDropBox.Location = new System.Drawing.Point(107, 129);
+            this.HeroicsDropBox.Location = new System.Drawing.Point(105, 129);
             this.HeroicsDropBox.Name = "HeroicsDropBox";
             this.HeroicsDropBox.Size = new System.Drawing.Size(94, 21);
             this.HeroicsDropBox.TabIndex = 29;
@@ -442,7 +438,7 @@
             this.ResentmentDropBox.CausesValidation = false;
             this.ResentmentDropBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ResentmentDropBox.FormattingEnabled = true;
-            this.ResentmentDropBox.Location = new System.Drawing.Point(107, 158);
+            this.ResentmentDropBox.Location = new System.Drawing.Point(105, 158);
             this.ResentmentDropBox.Name = "ResentmentDropBox";
             this.ResentmentDropBox.Size = new System.Drawing.Size(94, 21);
             this.ResentmentDropBox.TabIndex = 33;
@@ -521,12 +517,33 @@
             this.E.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.HitZoneTips.SetToolTip(this.E, resources.GetString("E.ToolTip"));
             // 
+            // WeaponSpecific
+            // 
+            this.WeaponSpecific.Controls.Add(this.label13);
+            this.WeaponSpecific.Location = new System.Drawing.Point(4, 22);
+            this.WeaponSpecific.Name = "WeaponSpecific";
+            this.WeaponSpecific.Size = new System.Drawing.Size(206, 318);
+            this.WeaponSpecific.TabIndex = 2;
+            this.WeaponSpecific.Text = "WeaponSpecific";
+            this.WeaponModTip.SetToolTip(this.WeaponSpecific, "kkuii");
+            this.WeaponSpecific.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(3, 5);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(200, 18);
+            this.label13.TabIndex = 24;
+            this.label13.Text = "Coming Soon";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // CriticalBoostDropBox
             // 
             this.CriticalBoostDropBox.CausesValidation = false;
             this.CriticalBoostDropBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CriticalBoostDropBox.FormattingEnabled = true;
-            this.CriticalBoostDropBox.Location = new System.Drawing.Point(106, 191);
+            this.CriticalBoostDropBox.Location = new System.Drawing.Point(105, 218);
             this.CriticalBoostDropBox.Name = "CriticalBoostDropBox";
             this.CriticalBoostDropBox.Size = new System.Drawing.Size(94, 21);
             this.CriticalBoostDropBox.TabIndex = 39;
@@ -534,7 +551,7 @@
             // CriticalBoostLabel
             // 
             this.CriticalBoostLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CriticalBoostLabel.Location = new System.Drawing.Point(3, 191);
+            this.CriticalBoostLabel.Location = new System.Drawing.Point(2, 218);
             this.CriticalBoostLabel.Name = "CriticalBoostLabel";
             this.CriticalBoostLabel.Size = new System.Drawing.Size(98, 18);
             this.CriticalBoostLabel.TabIndex = 38;
@@ -543,6 +560,42 @@
             this.CriticalBoostTips.SetToolTip(this.CriticalBoostLabel, "Instead of 25% extra damage from Critical Hits:\r\n\r\nLevel 1: 30% extra damage from" +
         " Critical Hits.\r\nLevel 2: 35% extra damage from Critical Hits.\r\nLevel 3: 40% ext" +
         "ra damage from Critical Hits.\r\n");
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(4, 69);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(97, 18);
+            this.label14.TabIndex = 32;
+            this.label14.Text = "Felyne Food";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CharmsTip.SetToolTip(this.label14, "Uses True Raw:\r\nPowerCharm: +~6 Attack Power\r\nPowerTalon: +~8 Attack Power\r\nBoth " +
+        "Charms Used: +15 Attack Power");
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(3, 105);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(97, 18);
+            this.label15.TabIndex = 34;
+            this.label15.Text = "Demon Drugs";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CharmsTip.SetToolTip(this.label15, "Uses True Raw:\r\nPowerCharm: +~6 Attack Power\r\nPowerTalon: +~8 Attack Power\r\nBoth " +
+        "Charms Used: +15 Attack Power");
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(3, 138);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(97, 18);
+            this.label16.TabIndex = 36;
+            this.label16.Text = "Seed/Pill";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CharmsTip.SetToolTip(this.label16, "Uses True Raw:\r\nPowerCharm: +~6 Attack Power\r\nPowerTalon: +~8 Attack Power\r\nBoth " +
+        "Charms Used: +15 Attack Power");
             // 
             // MotionValuePanel
             // 
@@ -626,11 +679,14 @@
             this.ModifierTab.Location = new System.Drawing.Point(5, 223);
             this.ModifierTab.Name = "ModifierTab";
             this.ModifierTab.SelectedIndex = 0;
+            this.ModifierTab.ShowToolTips = true;
             this.ModifierTab.Size = new System.Drawing.Size(214, 344);
             this.ModifierTab.TabIndex = 46;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label17);
+            this.tabPage1.Controls.Add(this.PeekPerformDropBox);
             this.tabPage1.Controls.Add(this.CriticalBoostLabel);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label4);
@@ -653,6 +709,28 @@
             this.tabPage1.Text = "Skill Modifiers";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(3, 187);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(98, 18);
+            this.label17.TabIndex = 44;
+            this.label17.Text = "Peek Performance";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PeekPerfoemanceTip.SetToolTip(this.label17, "While Health is Full:\r\n\r\nLevel 1: +5 Attack Power.\r\nLevel 2: +10 Attack Power.\r\nL" +
+        "evel 3: +20 Attack Power.");
+            // 
+            // PeekPerformDropBox
+            // 
+            this.PeekPerformDropBox.CausesValidation = false;
+            this.PeekPerformDropBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PeekPerformDropBox.FormattingEnabled = true;
+            this.PeekPerformDropBox.Location = new System.Drawing.Point(105, 187);
+            this.PeekPerformDropBox.Name = "PeekPerformDropBox";
+            this.PeekPerformDropBox.Size = new System.Drawing.Size(94, 21);
+            this.PeekPerformDropBox.TabIndex = 45;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.SeedPillDropBox);
@@ -672,58 +750,15 @@
             this.tabPage2.Text = "Misc";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // WeaponSpecific
+            // SeedPillDropBox
             // 
-            this.WeaponSpecific.Controls.Add(this.label13);
-            this.WeaponSpecific.Location = new System.Drawing.Point(4, 22);
-            this.WeaponSpecific.Name = "WeaponSpecific";
-            this.WeaponSpecific.Size = new System.Drawing.Size(206, 318);
-            this.WeaponSpecific.TabIndex = 2;
-            this.WeaponSpecific.Text = "WeaponSpecific";
-            this.WeaponModTip.SetToolTip(this.WeaponSpecific, "kkuii");
-            this.WeaponSpecific.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(3, 5);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(200, 18);
-            this.label12.TabIndex = 23;
-            this.label12.Text = "Misc. Modifiers";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(3, 5);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(200, 18);
-            this.label13.TabIndex = 24;
-            this.label13.Text = "Coming Soon";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // FelyneFoodDropBox
-            // 
-            this.FelyneFoodDropBox.CausesValidation = false;
-            this.FelyneFoodDropBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.FelyneFoodDropBox.FormattingEnabled = true;
-            this.FelyneFoodDropBox.Location = new System.Drawing.Point(104, 69);
-            this.FelyneFoodDropBox.Name = "FelyneFoodDropBox";
-            this.FelyneFoodDropBox.Size = new System.Drawing.Size(94, 21);
-            this.FelyneFoodDropBox.TabIndex = 33;
-            // 
-            // label14
-            // 
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(4, 69);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(97, 18);
-            this.label14.TabIndex = 32;
-            this.label14.Text = "Felyne Food";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CharmsTip.SetToolTip(this.label14, "Uses True Raw:\r\nPowerCharm: +~6 Attack Power\r\nPowerTalon: +~8 Attack Power\r\nBoth " +
-        "Charms Used: +15 Attack Power");
+            this.SeedPillDropBox.CausesValidation = false;
+            this.SeedPillDropBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SeedPillDropBox.FormattingEnabled = true;
+            this.SeedPillDropBox.Location = new System.Drawing.Point(103, 138);
+            this.SeedPillDropBox.Name = "SeedPillDropBox";
+            this.SeedPillDropBox.Size = new System.Drawing.Size(94, 21);
+            this.SeedPillDropBox.TabIndex = 37;
             // 
             // DemonDrugDropBox
             // 
@@ -735,39 +770,70 @@
             this.DemonDrugDropBox.Size = new System.Drawing.Size(94, 21);
             this.DemonDrugDropBox.TabIndex = 35;
             // 
-            // label15
+            // FelyneFoodDropBox
             // 
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(3, 105);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(97, 18);
-            this.label15.TabIndex = 34;
-            this.label15.Text = "Demon Drugs";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CharmsTip.SetToolTip(this.label15, "Uses True Raw:\r\nPowerCharm: +~6 Attack Power\r\nPowerTalon: +~8 Attack Power\r\nBoth " +
-        "Charms Used: +15 Attack Power");
+            this.FelyneFoodDropBox.CausesValidation = false;
+            this.FelyneFoodDropBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FelyneFoodDropBox.FormattingEnabled = true;
+            this.FelyneFoodDropBox.Location = new System.Drawing.Point(104, 69);
+            this.FelyneFoodDropBox.Name = "FelyneFoodDropBox";
+            this.FelyneFoodDropBox.Size = new System.Drawing.Size(94, 21);
+            this.FelyneFoodDropBox.TabIndex = 33;
             // 
-            // SeedPillDropBox
+            // label12
             // 
-            this.SeedPillDropBox.CausesValidation = false;
-            this.SeedPillDropBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.SeedPillDropBox.FormattingEnabled = true;
-            this.SeedPillDropBox.Location = new System.Drawing.Point(103, 138);
-            this.SeedPillDropBox.Name = "SeedPillDropBox";
-            this.SeedPillDropBox.Size = new System.Drawing.Size(94, 21);
-            this.SeedPillDropBox.TabIndex = 37;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(3, 5);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(200, 18);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "Misc. Modifiers";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label16
+            // menuStrip1
             // 
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(3, 138);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(97, 18);
-            this.label16.TabIndex = 36;
-            this.label16.Text = "Seed/Pill";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CharmsTip.SetToolTip(this.label16, "Uses True Raw:\r\nPowerCharm: +~6 Attack Power\r\nPowerTalon: +~8 Attack Power\r\nBoth " +
-        "Charms Used: +15 Attack Power");
+            this.menuStrip1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.menuStrip1.AutoSize = false;
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MVTTStrip});
+            this.menuStrip1.Location = new System.Drawing.Point(628, 13);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(97, 22);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // MVTTStrip
+            // 
+            this.MVTTStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ShowModToggle,
+            this.UseAffinityToggle});
+            this.MVTTStrip.Name = "MVTTStrip";
+            this.MVTTStrip.Size = new System.Drawing.Size(82, 18);
+            this.MVTTStrip.Text = "MV Options";
+            // 
+            // ShowModToggle
+            // 
+            this.ShowModToggle.AutoToolTip = true;
+            this.ShowModToggle.CheckOnClick = true;
+            this.ShowModToggle.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.ShowModToggle.Name = "ShowModToggle";
+            this.ShowModToggle.Size = new System.Drawing.Size(152, 22);
+            this.ShowModToggle.Text = "Show Default";
+            this.ShowModToggle.ToolTipText = "If enabled, 100 True Raw will be used instead of Final Raw.\r\nUseful for seeing th" +
+    "e default motion values.";
+            // 
+            // UseAffinityToggle
+            // 
+            this.UseAffinityToggle.AutoToolTip = true;
+            this.UseAffinityToggle.Checked = true;
+            this.UseAffinityToggle.CheckOnClick = true;
+            this.UseAffinityToggle.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.UseAffinityToggle.Name = "UseAffinityToggle";
+            this.UseAffinityToggle.Size = new System.Drawing.Size(152, 22);
+            this.UseAffinityToggle.Text = "Use Affinity";
+            this.UseAffinityToggle.ToolTipText = "If enabled, Affinity will be used in Motion Value Calculations.\r\nThis shows the A" +
+    "VERAGE damage per motion!\r\nFor actual Crit Damage, set Natural Affinity to 100.";
             // 
             // CalculatorUI
             // 
@@ -775,6 +841,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(734, 687);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.ModifierTab);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.ElementalDamage);
@@ -788,7 +855,6 @@
             this.Controls.Add(this.FinalAffinityLabel);
             this.Controls.Add(this.NaturalAffinityLabel);
             this.Controls.Add(this.NaturalAffinity);
-            this.Controls.Add(this.ShowModToggle);
             this.Controls.Add(this.FinalRawValueLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.SharpnessModifierLabel);
@@ -805,6 +871,7 @@
             this.Controls.Add(this.MotionValueBox);
             this.Controls.Add(this.MotionValuePanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(750, 726);
             this.MinimumSize = new System.Drawing.Size(750, 726);
@@ -819,13 +886,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.FakeRaw)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NaturalAffinity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HitzoneModifier)).EndInit();
+            this.WeaponSpecific.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ElementalHitzoneModifier)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ElementalDamage)).EndInit();
             this.ModifierTab.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.WeaponSpecific.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -849,7 +918,6 @@
         private System.Windows.Forms.ToolTip TrueRawTip;
         private System.Windows.Forms.ToolTip FakeRawTip;
         private System.Windows.Forms.ToolTip MotionValue;
-        private System.Windows.Forms.CheckBox ShowModToggle;
         private System.Windows.Forms.ToolTip ShowModTip;
         private System.Windows.Forms.Label NaturalAffinityLabel;
         private System.Windows.Forms.ToolTip NaturalAffinityTip;
@@ -904,6 +972,13 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox SeedPillDropBox;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox PeekPerformDropBox;
+        private System.Windows.Forms.ToolTip PeekPerfoemanceTip;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem MVTTStrip;
+        private System.Windows.Forms.ToolStripMenuItem ShowModToggle;
+        private System.Windows.Forms.ToolStripMenuItem UseAffinityToggle;
     }
 }
 

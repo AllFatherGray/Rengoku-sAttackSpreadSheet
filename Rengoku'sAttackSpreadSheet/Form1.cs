@@ -30,6 +30,7 @@ namespace Rengoku_sAttackSpreadSheet
         private decimal NonElementalBonus => (!ElementLessBonusBox.Checked || ElementalDamage.Value > 0) ? 1 : 1.1m;
         private int ResentmentBonus => WeaponDataBase.GetAttackModifier((Resentment)ResentmentDropBox.SelectedIndex);
         private int AttackBonus => WeaponDataBase.GetAttackModifier((AttackBoost)AttackBoostDropBox.SelectedIndex);
+        private int PeekAttackBonus => WeaponDataBase.GetAttackModifier((PeakPerformance)PeekPerformDropBox.SelectedIndex);
         private int CharmBonus => WeaponDataBase.GetAttackModifier((PowerCharms)CharmsDropDown.SelectedIndex);
         private int FelyneBonus => WeaponDataBase.GetAttackModifier((FelyneFood)FelyneFoodDropBox.SelectedIndex);
         private int DemonBonus => WeaponDataBase.GetAttackModifier((DemonDrugs)DemonDrugDropBox.SelectedIndex);
@@ -48,7 +49,7 @@ namespace Rengoku_sAttackSpreadSheet
             get
             {
                 string nextMV = WeaponDataBase.GetWeaponMotionValues(CurrentWeapon);
-                decimal tempFinalRaw = WeaponDataBase.ApplyAffinity(TotalRaw, TotalAffinity, CritBoostBonus); ;
+                decimal tempFinalRaw = UseAffinityToggle.Checked ? WeaponDataBase.ApplyAffinity(TotalRaw, TotalAffinity, CritBoostBonus) : TotalRaw;
                 switch(CurrentWeapon)
                 {
                     case WeaponClass.HeavyBowGun:
@@ -95,7 +96,7 @@ namespace Rengoku_sAttackSpreadSheet
                 // Using Current User Values or A default value to look at Motion Values?
                 decimal CurrentValue = !ShowModToggle.Checked ? TrueRaw.Value : 100;
 
-                return (CurrentValue + ResentmentBonus + AttackBonus + CharmBonus + FelyneBonus + DemonBonus + SeedPillBonus) * NonElementalBonus * HeroicsBonus;
+                return (CurrentValue * NonElementalBonus * HeroicsBonus) + AttackBonus + PeekAttackBonus + ResentmentBonus + CharmBonus + FelyneBonus + DemonBonus + SeedPillBonus;
             }
         }
         private decimal FinalRaw
@@ -142,6 +143,7 @@ namespace Rengoku_sAttackSpreadSheet
             WeaknessExploitDropBox.SelectedIndexChanged += UpdateEvent;
             HeroicsDropBox.SelectedIndexChanged += UpdateEvent;
             ResentmentDropBox.SelectedIndexChanged += UpdateEvent;
+            PeekPerformDropBox.SelectedIndexChanged += UpdateEvent;
             CriticalBoostDropBox.SelectedIndexChanged += UpdateEvent;
             CharmsDropDown.SelectedIndexChanged += UpdateEvent;
             FelyneFoodDropBox.SelectedIndexChanged += UpdateEvent;
@@ -156,6 +158,7 @@ namespace Rengoku_sAttackSpreadSheet
             ElementalHitzoneModifier.ValueChanged += UpdateEvent;
 
             ShowModToggle.CheckedChanged += UpdateEvent;
+            UseAffinityToggle.CheckedChanged += UpdateEvent;
             ElementLessBonusBox.CheckedChanged += UpdateEvent;
             #endregion
             #region Populating DropDowns
@@ -179,6 +182,9 @@ namespace Rengoku_sAttackSpreadSheet
 
             ResentmentDropBox.Items.AddRange(Enum.GetValues(typeof(Resentment)).Cast<object>().ToArray());
             ResentmentDropBox.SelectedIndex = 0;
+
+            PeekPerformDropBox.Items.AddRange(Enum.GetValues(typeof(PeakPerformance)).Cast<object>().ToArray());
+            PeekPerformDropBox.SelectedIndex = 0;
 
             CriticalBoostDropBox.Items.AddRange(Enum.GetValues(typeof(CriticalBoost)).Cast<object>().ToArray());
             CriticalBoostDropBox.SelectedIndex = 0;
